@@ -1,0 +1,29 @@
+<ion-list>
+
+  <ion-item>
+    <ion-label stacked>Name</ion-label>
+    <ion-input type="text" #name></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Surname</ion-label>
+    <ion-input type="text" #surname></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Role</ion-label>
+    <ion-input type="text" #role></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>id</ion-label>
+    <ion-input type="text" #id></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+</ion-list>
+<button ion-button color="login" (click)="register(name.value,surname.value,role.value,id.value,password.value)">Register</button>
